@@ -33,7 +33,7 @@
                 <div class="d-inline-flex align-items-center text-white">
                     <small><i class="fa fa-phone-alt mr-2"></i>+91 9591059018</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>allinone@gmail.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</small></a>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -84,7 +84,7 @@
                     <a href="practice.html" class="nav-item nav-link">Practice</a>
                     <a href="companies.html" class="nav-item nav-link">Companies</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="#mes" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
@@ -383,17 +383,18 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" id="location">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                    <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 550px;">
                         <div class="d-flex align-items-center mb-5">
                             <div class="btn-icon bg-primary mr-4">
                                 <i class="fa fa-2x fa-map-marker-alt text-white"></i>
                             </div>
                             <div class="mt-n1">
                                 <h4>Our Location</h4>
+                                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=CMR Institute Of Technology+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
                                 <p class="m-0">CMR Institute of Technology, Bengaluru, Karnataka, India</p>
                             </div>
                         </div>
@@ -412,12 +413,12 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>Email Us</h4>
-                                <p class="m-0">allinone@gmail.com</p>
+                                <a class="m-0" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" id="mes">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
                         <h1 class="display-4">Send Us A Message</h1>
@@ -426,20 +427,20 @@
                         <form>
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required" id="name">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required" id="email">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
+                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required" id="subject">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required" id="message"></textarea>
                             </div>
                             <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit" id="btn">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -447,6 +448,33 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        var bt= document.getElementById('btn');
+        var nam= document.getElementById('name').value;
+        var emai= document.getElementById('email').value;
+        var subjec= document.getElementById('subject').value;
+        var messag= document.getElementById('message').value;
+        var bod='name: ' +nam +'<br/>' +'email: ' +emai +'<br/>' +'message: ' +messag;
+        btn.addEventListener('click',function(e){
+            e.preventDefault();
+    
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "sid2410anand@gmail.com",
+            Password : "A8CFD957AD938245EDDCCE759C8625D90A32",
+            To : 'siddhantanand111@gmail.com',
+            From : "sid2410anand@gmail.com",
+            Subject : document.getElementById('subject').value,
+            Body : 'name: ' + document.getElementById('name').value+'<br/>' +'email: ' +document.getElementById('email').value +'<br/>' +'message: ' +document.getElementById('message').value
+        }).then(
+        message => alert(message)
+        );
+
+                })
+    </script>
     <!-- Contact End -->
 
 
@@ -475,9 +503,9 @@
             <div class="row">
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>CMR Institute of Technology, Bengaluru, Karnataka, India</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i><a href="#location">CMR Institute of Technology, Bengaluru, Karnataka, India</p></a>
                     <p><i class="fa fa-phone-alt mr-2"></i>+91 9591059018</p>
-                    <p><i class="fa fa-envelope mr-2"></i>allinone@gmail.com</p>
+                    <p><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</p></a>
                     <div class="d-flex justify-content-start mt-4">
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
@@ -503,7 +531,7 @@
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        <a class="text-white-50" href="#mes"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                     </div>
                 </div>
             </div>
@@ -517,7 +545,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    <p class="m-0">Designed by <a class="text-white" href="#">HTML Codex</a>
                     </p>
                 </div>
             </div>
