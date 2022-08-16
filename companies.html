@@ -84,14 +84,11 @@
                     <a href="practice.html" class="nav-item nav-link">Practice</a>
                     <a href="team.html" class="nav-item nav-link active">Companies</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="index.html#mes" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
-
-
-
 
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 90px;">
@@ -108,14 +105,14 @@
                         <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Companies</button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Product-Based Companies</a>
-                            <a class="dropdown-item" href="#">Service-Based Companies</a>
-                            <a class="dropdown-item" href="#">Start-Ups</a>
+                            <a class="dropdown-item" href="#product-based">Product-Based Companies</a>
+                            <a class="dropdown-item" href="#service-based">Service-Based Companies</a>
+                            <a class="dropdown-item" href="#start-ups">Start-Ups</a>
                         </div>
                     </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <input type="text" id="companies-search-field" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                        <button id="companies-search-button" class="btn btn-secondary px-4 px-lg-5">Search</button>
                     </div>
                 </div>
             </div>
@@ -124,6 +121,11 @@
     <!-- Header End -->
 
     <!-- Companies Start -->
+    <br><br><br>
+    <div id="product-based" class="section-title text-center position-relative mb-5">
+        <h4 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Product-Based Companies</h4>
+    </div>
+    <br><br><br>
     <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
         <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://careers.google.com/" target="_blank">
             <img class="img-fluid" src="img/google-logo.jpg" alt="" height="600px" width="500px">
@@ -159,6 +161,71 @@
         </a>
     </div>
 </div>
+<br><br><br><br><br><br><br>
+    <div id="service-based" class="section-title text-center position-relative mb-5">
+        <h4 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Service-Based Companies</h4>
+    </div>
+    <br><br><br>
+<div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://careers.wipro.com/careers-home/" target="_blank">
+        <img class="img-fluid" src="img/wipro-logo.jpg" alt="" height="600px" width="500px">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://www.tcs.com/careers?country=IN&lang=EN" target="_blank">
+        <img class="img-fluid" src="img/tcs-logo.jpg" alt="">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://career.infosys.com/joblist" target="_blank">
+        <img class="img-fluid" src="img/infosys-logo.png" alt="">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<br><br><br><br><br><br><br>
+    <div id="start-ups" class="section-title text-center position-relative mb-5">
+        <h4 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Start-Ups</h4>
+    </div>
+    <br><br><br>
+<div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://ola.skillate.com/" target="_blank">
+        <img class="img-fluid" src="img/ola-logo.png" alt="" height="600px" width="500px">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://careers.swiggy.com/#/" target="_blank">
+        <img class="img-fluid" src="img/swiggy-logo.png" alt="">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+    <a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="https://www.zomato.com/careers" target="_blank">
+        <img class="img-fluid" src="img/zomato-logo.jpg" alt="">
+        <div class="courses-text">
+            <h4 class="text-center text-white px-3"></h4>
+            <div class="border-top w-100 mt-3">
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<br><br><br><br>
 <!-- Companies End -->
 
     <!-- Footer Start -->
@@ -251,6 +318,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/companies.js"></script>
 </body>
 
 </html>

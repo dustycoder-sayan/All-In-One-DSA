@@ -84,7 +84,7 @@
                     <a href="practice.html" class="nav-item nav-link active">Practice</a>
                     <a href="companies.html" class="nav-item nav-link">Companies</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="index.html#mes" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
@@ -106,14 +106,14 @@
                         <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Practice</button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Beginner</a>
-                            <a class="dropdown-item" href="#">Intermediate</a>
-                            <a class="dropdown-item" href="#">Expert</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=EASY&page=1">Beginner</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=MEDIUM&page=1">Intermediate</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=HARD&page=1">Expert</a>
                         </div>
                     </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <input type="text" id="practice-search-field" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                        <button id="practice-search-button" class="btn btn-secondary px-4 px-lg-5">Search</button>
                     </div>
                 </div>
             </div>
@@ -247,6 +247,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/practice.js"></script>
 </body>
 
 </html>
