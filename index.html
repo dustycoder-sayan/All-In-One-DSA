@@ -107,9 +107,9 @@
                             <a class="dropdown-item" href="#">Expert</a>
                         </div>
                     </div>
-                    <input type="text" id="index-search-field" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button id="index-search-button" class="btn btn-secondary px-4 px-lg-5">Search</button>
+                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
                     </div>
                 </div>
             </div>
@@ -345,7 +345,7 @@
                     </div>
                 </div>
                 <div class="courses-item position-relative">
-                    <img class="img-fluid" src="img/swati.jpeg" alt="">
+                    <img class="img-fluid" src="swati.jpeg" alt="">
                     <div class="courses-text">
                         <h4 class="text-center text-white px-3">Swati</h4>
                         <div class="d-flex justify-content-center">
@@ -468,7 +468,7 @@
             To : 'siddhantanand111@gmail.com',
             From : "sid2410anand@gmail.com",
             Subject : document.getElementById('subject').value,
-            Body : 'name: ' + document.getElementById('name').value+'<br/>' +'email: ' +document.getElementById('email').value +'<br/>' +'message: ' +document.getElementById('message').value
+            Body : 'Name: ' + document.getElementById('name').value+'<br/>' +'Email: ' +document.getElementById('email').value +'<br/>' +'Message: ' +document.getElementById('message').value
         }).then(
         message => alert(message)
         );
@@ -541,7 +541,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">DSA : All in One</a>. All Rights Reserved.
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="#">HTML Codex</a>
                     </p>
                 </div>
             </div>
@@ -564,7 +568,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
