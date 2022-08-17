@@ -33,7 +33,7 @@
                 <div class="d-inline-flex align-items-center text-white">
                     <small><i class="fa fa-phone-alt mr-2"></i>+91 9591059018</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</small></a>
+                    <small><i class="fa fa-envelope mr-2"></i>allinone@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -85,7 +85,7 @@
                     <a href="practice.html" class="nav-item nav-link">Practice</a>
                     <a href="companies.html" class="nav-item nav-link">Companies</a>
                 </div>
-                <a href="index.html#mes" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
@@ -140,18 +140,35 @@
                         </div>
                         <p><h7 class="display-5">Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.</h7></p>
                         <img class="img-fluid" src="img/linear_search.gif" alt="">
-                       <p><h7 class="display-5">The steps used in the implementation of Linear Search are listed as follows -
-
-                        First, we have to traverse the array elements using a for loop.
-                        In each iteration of for loop, compare the search element with the current array element, and -
-                        If the element matches, then return the index of the corresponding array element.
-                        If the element does not match, then move to the next element.
-                        If there is no match or the search element is not present in the given array, return -1.</h7>
+                       <p><h7 class="display-5">The steps used in the implementation of Linear Search are listed as follows:-</h7>
+                       <ol><h5><li><p>First, we have to traverse the array elements using a for loop.</p></li><li><p>In each iteration of for loop, compare the search element with the current array element.</p></li><li><p>If the element matches, then return the index of the corresponding array element.</p></li><li><p>If the element does not match, then move to the next element.</p></li><li><p>If there is no match or the search element is not present in the given array, return -1</p></li></h5></ol>
+                        </h7>
                         <div class="section-title position-relative mb-5">
-                            <h1 class="display-4">Why Searching Algorithms are Important?</h1>
+                            <h5 class="display-5"><strong>For Example:</strong></h1>
                         </div>
-                        <p><h7 class="display-5">We often need to find one particular item of data amongst many hundreds, thousands, millions or more. For example, you might need to find someone’s phone number on your phone.This is why searching algorithms are important.<br></h7></p>
-                        <div class="section-title position-relative mb-5">
+                        <h5 class="display-5"><p><strong>Input:</strong> arr[] = {10, 20, 80, 30, 60, 50,110, 100, 130, 170}, x = 110;<br><strong>Output:</strong> 6<br><strong>Explanation: </strong>Element x is present at index 6</p><p><strong>Input:</strong> arr[] = {10, 20, 80, 30, 60, 50,110, 100, 130, 170}, x = 175;<br><strong>Output:</strong> -1<br><strong>Explanation: </strong>Element x is not present in arr[].</p></h5>
+                        <br><br><p><h7 class="display-5">Let's look at an array and we have to find '20' in that array<br></h7></p>
+                        <img class="img-fluid" src="img/linSearch1.png" alt="">
+                        <h5 class="display-5"><br><br><p>So, <strong> '20'</strong> is present at <strong>index-6</strong>.</p></h5>
+                        <h2 class="h2">Working of Linear search</h2>
+                        <p>Now, let's see the working of the linear search Algorithm.</p>
+                        <p>Let the elements of array are -</p>
+                        <img class="img-fluid" src="img/linSearch2.png" alt="">
+                        <p>Let element to be searched is <strong>k=41</strong></p>
+                        <p>let's start from first element and compare k</p>
+                        <img class="img-fluid" src="img/linSearch3.png" alt="">
+                        <p>The value of K, i.e., 41, is not matched with the first element of the array. So, move to the next element. And follow the same process until the respective element is found.</p>
+                        <img class="img-fluid" src="img/linSearch4.png" alt=""><br>
+                        <img class="img-fluid" src="" alt=""><br>
+                        <img class="img-fluid" src="" alt=""><br>
+                        <img class="img-fluid" src="" alt=""><br>
+                        <img class="img-fluid" src="" alt=""><br>
+                        <h1 class="display-4">Linear Search complexity</h1>
+                        <p>Now, let's see the time complexity of linear search in the best case, average case, and worst case. We will also see the space complexity of linear search.</p>
+                        <h3 class="display-5"><strong><li>Time complexity </strong></h6><ol><li><p class="display-5"><b><u>Best Case Complexity:</u></b>In Linear search, best case occurs when the element we are finding is at the first position of the array. The best-case time complexity of linear search is<b> O(1)</b>.</p><p class="display-5"><li><b><u>Average Case Complexity:</u></b>The average case time complexity of linear search is <b>O(n)</b>.</li><p class="display-5"><li><b><u>Worst Case Complexity:</u></b>In Linear search, the worst case occurs when the element we are looking is present at the end of the array. The worst-case in linear search could be when the target element is not present in the given array, and we have to traverse the entire array. The worst-case time complexity of linear search is <b>O(n)</b>.</ol>
+                           
+                        
+                        <div class="section-title position-relative mb-5">  
                             <h1 class="display-4">Time-Space Trade-Off</h1>
                         </div>
                         <p><h7 class="display-5">A tradeoff is a situation where one thing increases and another thing decreases. It is a way to solve a problem in:<ul><li>Either in less time and by using more space, or</li><li>In very little space by spending a long amount of time.</li></ul></h7></p>
@@ -233,8 +250,8 @@
    
 
 
-         <!-- Footer Start -->
-    <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+     <!-- Footer Start -->
+     <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
         <div class="container mt-5 pt-5">
             <div class="row">
                 <div class="col-md-6 mb-5">
@@ -258,13 +275,9 @@
             <div class="row">
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i><a href="#location">CMR Institute of Technology, Bengaluru, Karnataka, India</p></a>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>CMR Institute of Technology, Bengaluru, Karnataka, India</p>
                     <p><i class="fa fa-phone-alt mr-2"></i>+91 9591059018</p>
-<<<<<<< HEAD
-                    <small><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</small></a>
-=======
-                    <p><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</p></a>
->>>>>>> 62fc6bbf6ab11fd5745876b619db73d1b4a6fb4d
+                    <p><i class="fa fa-envelope mr-2"></i>allinone@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
@@ -290,7 +303,7 @@
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                        <a class="text-white-50" href="#mes"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                     </div>
                 </div>
             </div>
@@ -300,13 +313,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">DSA : All in One</a>. All Rights Reserved.
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">All_In_One_DSA</a>. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">Surprise</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
