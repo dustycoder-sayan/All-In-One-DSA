@@ -84,7 +84,7 @@
                     <a href="practice.html" class="nav-item nav-link active">Practice</a>
                     <a href="companies.html" class="nav-item nav-link">Companies</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+                <a href="index.html#mes" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
             </div>
         </nav>
     </div>
@@ -106,14 +106,14 @@
                         <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Practice</button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Beginner</a>
-                            <a class="dropdown-item" href="#">Intermediate</a>
-                            <a class="dropdown-item" href="#">Expert</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=EASY&page=1">Beginner</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=MEDIUM&page=1">Intermediate</a>
+                            <a class="dropdown-item" href="https://leetcode.com/problemset/all/?difficulty=HARD&page=1">Expert</a>
                         </div>
                     </div>
-                    <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
+                    <input type="text" id="practice-search-field" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+                        <button id="practice-search-button" class="btn btn-secondary px-4 px-lg-5">Search</button>
                     </div>
                 </div>
             </div>
@@ -182,9 +182,13 @@
             <div class="row">
                 <div class="col-md-4 mb-5">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>CMR Institute of Technology, Bengaluru, Karnataka, India</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i><a href="#location">CMR Institute of Technology, Bengaluru, Karnataka, India</p></a>
                     <p><i class="fa fa-phone-alt mr-2"></i>+91 9591059018</p>
+<<<<<<< HEAD
                     <small><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</small></a>
+=======
+                    <p><i class="fa fa-envelope mr-2"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbQRdPMLKBvHHgdPnNzxjmJVJlcRXcKJLVtBTsXHFxWDNdcFpJPCTkJGHnQJNKwCWRNWL" rel="noopener noreferrer" target="_blank">allinone@gmail.com</p></a>
+>>>>>>> 62fc6bbf6ab11fd5745876b619db73d1b4a6fb4d
                     <div class="d-flex justify-content-start mt-4">
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                         <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
@@ -210,7 +214,7 @@
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
                         <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                        <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                        <a class="text-white-50" href="#mes"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                     </div>
                 </div>
             </div>
@@ -220,18 +224,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.
-                    </p>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    <p class="m-0">Copyright &copy; <a class="text-white" href="#">DSA : All in One</a>. All Rights Reserved.
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -247,6 +246,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/practice.js"></script>
 </body>
 
 </html>
